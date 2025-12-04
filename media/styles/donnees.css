@@ -1,0 +1,112 @@
+
+:root {
+    --color-primary: #e6001a;
+    --color-secondary: #008000;
+    --color-text: #333;
+    --color-background: #f4f7f6;
+    --color-card-bg: #fff;
+    --color-border: #ccc;
+    --font-main: 'Montserrat', sans-serif;
+}
+
+.tabs-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    gap: 10px;
+}
+
+/* Header Navigation */
+.header-nav {
+    background-color: var(--color-primary);
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+}
+
+.tabs-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    gap: 10px;
+}
+
+.tab {
+    background-color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: 2px solid var(--color-border);
+    font-weight: 700;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.tab.active {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+.title-center {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 40px;
+    color: var(--color-text);
+}
+
+.enregistrer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 60px auto;
+}
+
+.left-buttons, .right-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-buttons {
+    width: 60%;
+}
+
+.right-buttons {
+    width: 35%;
+    align-items: flex-end;
+}
+
+.data-btn {
+    background-color: white;
+    border: 3px solid black;
+    padding: 15px 20px;
+    font-size: 1.1em;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px black;
+    transition: 0.2s;
+    width: 100%;
+    text-align: left;
+}
+
+.data-btn:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 0px black;
+}
+
+.data-btn.right {
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 60px auto;
+}
+
+.footer-links a {
+    font-weight: 600;
+}
