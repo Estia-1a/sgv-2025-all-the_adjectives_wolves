@@ -1,20 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>BaskiSanté</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Baskisanté - Suivi Santé Pays Basque</title>
     <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 768px)"> 
     <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 767px)"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
+    <!-- Ajout du logo -->
     <div class="logo">
     <a href="index.html"> 
       <img src="logoB.png" class="logo-img" alt="Logo">
     </a>
+    </div>
 
-</div>
+<!-- liens vers les autres pages -->
+    <nav class="header-nav">
+        <div class="nav-links">
+            <a href="s-authentifier.html">Se connecter</a>
+            <a href="creer-compte.html">Créer un compte</a>
+            <a href="faq.html">FAQ</a>
+            <a href ="Quisommesnous.html">Qui sommes-nous ?</a>
+        </div>
+    </nav>
+ 
+    <div class="main-content-centered" style="align-items: center; flex-direction: column;">
+       
+        <div class="home-hero">
+            <h1>Votre Santé au Cœur du Pays Basque</h1>
+            <p>**Baskisanté** (Vivre Sainement) est l'application conçue pour vous. Suivez votre activité, votre alimentation, votre sommeil et gérez votre stress, avec des conseils personnalisés pour un mode de vie basque sain.</p>
+        </div>
+ 
+        <div class="action-grid">
+           
+            <div class="action-card">
+                <h3>Nouveau ici ?</h3>
+                <p>Commencez votre parcours de bien-être en créant votre espace personnel.</p>
+                <a href="creer-compte.html">Créer un compte</a>
+            </div>
+ 
+            <div class="action-card">
+                <h3>Accès Membre</h3>
+                <p>Connectez-vous pour consulter votre tableau de bord et vos progrès.</p>
+                <a href="s-authentifier.html">S'authentifier</a>
+            </div>
+ 
+            <div class="action-card">
+                <h3>Enregistrer vos Données</h3>
+                <p>Saisissez rapidement votre activité, votre repas ou votre niveau de stress.</p>
+                <a href="enregistrer-donnees.html">Enregistrer mes données</a>
+            </div>
+ 
+            <div class="action-card">
+                <h3>Gérer mon Profil</h3>
+                <p>Modifiez vos informations personnelles et vos objectifs de santé.</p>
+                <a href="modifier-donnees.html">Modifier mes données</a>
+            </div>
+ 
+            <div class="action-card">
+                <h3>Des questions ?</h3>
+                <p>Consultez notre foire aux questions pour plus d'informations.</p>
+                <a href="faq.html">Consulter la FAQ</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
