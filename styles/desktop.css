@@ -6,7 +6,7 @@
     --color-card-bg: #fff;
     --color-border: #ccc;
     --font-main: 'Montserrat', sans-serif;
-    --color-footer-bg: #222; /* Nouvelle variable pour le fond du pied de page */
+    --color-footer-bg: #222;
 }
 
 /* Reset */
@@ -17,13 +17,6 @@
 }
 
 /* Logo */
-/* J'ai supprimé la position absolue du logo pour qu'il s'aligne dans le header flex */
-.logo {
-    /* position: absolute; */ 
-    /* top: 10px; */
-    /* left: 10px; */
-}
-
 .logo-img {
     width: 80px;
     height: auto;
@@ -35,7 +28,6 @@ body {
     background-color: var(--color-background);
     color: var(--color-text);
     line-height: 1.6;
-    /* Ajout d'une hauteur minimale pour placer le footer en bas */
     min-height: 100vh; 
     display: flex;
     flex-direction: column;
@@ -53,42 +45,27 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Header Navigation */
+/* Header Navigation (Conteneur principal) */
 .header-nav {
     background-color: var(--color-primary);
     padding: 15px 30px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Espace le logo des actions */
     align-items: center;
-    /* Le padding-left est ajusté pour le logo */
-    /* padding-left: 80px; */ 
 }
 
-/* Liens principaux de la navigation */
+/* La balise nav au milieu (nav-links) est nécessaire pour l'alignement flexbox */
 .nav-links {
-    display: flex; /* Permet d'aligner les liens principaux */
+    display: flex; 
     margin-left: 20px;
+    flex-grow: 1; /* Pousse les user-actions à droite */
 }
 
-.nav-links a {
-    color: white;
-    margin-left: 20px;
-    font-weight: 500;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.nav-links a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    text-decoration: none;
-}
-
-/* NOUVEAU: Liens de l'utilisateur (Créer un compte, Se connecter, Abonnement) en haut à droite */
+/* Actions Utilisateur (Créer un compte, Se connecter, Abonnement) */
 .user-actions {
     display: flex;
-    gap: 15px; /* Espacement entre les liens */
+    gap: 15px; 
 }
 
 .user-actions a {
@@ -97,11 +74,10 @@ a:hover {
     padding: 8px 12px;
     border-radius: 5px;
     transition: background-color 0.3s, border 0.3s;
-    /* Style spécifique pour les actions (par exemple, un bouton pour 'Créer un compte') */
 }
 
 .user-actions a.signup-btn {
-    background-color: var(--color-secondary); /* Couleur secondaire pour le bouton principal */
+    background-color: var(--color-secondary); 
 }
 
 .user-actions a.signup-btn:hover {
@@ -115,16 +91,14 @@ a:hover {
 
 /* Main Content */
 .main-content-centered {
-    /* flex-grow: 1; pour que le contenu prenne l'espace disponible au-dessus du footer */
     flex-grow: 1; 
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding: 40px 20px;
-    /* min-height: calc(100vh - 70px); - Retiré car géré par flex-grow: 1 sur body */
 }
 
-/* Card - Le style reste pertinent pour un formulaire/login card */
+/* Card (pour connexion/inscription) */
 .card {
     background-color: var(--color-card-bg);
     padding: 30px;
@@ -143,7 +117,7 @@ a:hover {
     padding-bottom: 10px;
 }
 
-/* Formulaire - (Laissé inchangé car il peut être utilisé ailleurs) */
+/* Formulaire */
 .form-group {
     margin-bottom: 15px;
 }
@@ -175,16 +149,6 @@ select:focus {
     box-shadow: 0 0 0 3px rgba(230, 0, 26, 0.1);
 }
 
-.form-row {
-    display: flex;
-    gap: 15px;
-}
-
-.half-width {
-    flex: 1;
-}
-
-/* Bouton Submit */
 .submit-btn {
     width: 100%;
     background-color: var(--color-primary);
@@ -203,14 +167,13 @@ select:focus {
     background-color: #c90016;
 }
 
-/* Lien Login */
 .login-link {
     text-align: center;
     margin-top: 20px;
     font-size: 0.9em;
 }
 
-/* Hero Section */
+/* Hero Section (sur la page d'accueil) */
 .home-hero {
     text-align: center;
     padding: 60px 20px;
@@ -218,7 +181,7 @@ select:focus {
     margin-bottom: 30px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    max-width: 900px; /* Ajout d'une max-width pour centrer le hero */
+    max-width: 900px; 
     width: 100%;
 }
 
@@ -228,7 +191,7 @@ select:focus {
     margin-bottom: 10px;
 }
 
-/* Action Grid */
+/* Action Grid (sur la page d'accueil) */
 .action-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -273,13 +236,13 @@ select:focus {
     text-decoration: none;
 }
 
-/* NOUVEAU: Pied de page pour Mentions Légales et FAQ */
+/* Pied de page pour Mentions Légales et FAQ */
 .site-footer {
     background-color: var(--color-footer-bg);
     color: #fff;
     padding: 20px 30px;
     text-align: center;
-    margin-top: auto; /* Pousse le footer tout en bas */
+    margin-top: auto;
     border-top: 3px solid var(--color-secondary);
 }
 
