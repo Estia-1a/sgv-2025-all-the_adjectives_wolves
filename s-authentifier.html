@@ -3,48 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion - Baskisanté</title>
-
+    <title>Baskisanté - Se Connecter</title>
     <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 768px)">
     <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 767px)">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles/login.css">
 </head>
-
 <body>
 
-    <div class="logo">
-        <a href="index.html">
-            <img src="logoB.png" class="logo-img" alt="Logo">
-        </a>
+    <!-- HEADER : Structure identique à la page d'accueil -->
+    <header class="header-nav">
+        <div class="logo">
+            <a href="index.html">
+                <img src="logoB.png" class="logo-img" alt="Logo Baskisanté">
+            </a>
+        </div>
+
+        <nav class="nav-links">
+            <!-- Laisser vide -->
+        </nav>
+
+        <!-- Actions Utilisateur en haut à droite (Créer un compte, Se connecter, Abonnement) -->
+        <div class="user-actions">
+            <a href="creer-compte.html" class="signup-btn">Créer un compte</a>
+            <a href="s-authentifier.html">Se connecter</a>
+            <a href="abo.html">Abonnement</a>
+        </div>
+    </header>
+
+    <!-- CONTENU PRINCIPAL : Formulaire de Connexion centré -->
+    <div class="main-content-centered">
+        
+        <div class="card">
+            <h2>Connectez-vous à votre compte Baskisanté</h2>
+            
+            <form action="/login" method="POST">
+                
+                <div class="form-group">
+                    <label for="email">Adresse Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <button type="submit" class="submit-btn">Se Connecter</button>
+                
+            </form>
+            
+            <p class="login-link">
+                <a href="creer-compte.html">Créer un compte</a> | 
+                <a href="recuperation-mdp.html">Mot de passe oublié ?</a>
+            </p>
+        </div>
+
     </div>
 
-    <nav class="header-nav">
-        <div class="nav-links">
-            <a href="abonnements.html">Abonnements</a>
-            <a href="creer-compte.html">Créer un compte</a>
+    <!-- FOOTER : Structure identique à la page d'accueil (Mentions légales et FAQ) -->
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="mention.html">Mentions légales</a>
             <a href="faq.html">FAQ</a>
         </div>
-    </nav>
-
-    <div class="login-container">
-
-        <h2 class="login-title">Connexion</h2>
-
-        <form class="login-form">
-
-            <label class="login-label">Mail ou Nom d'utilisateur :</label>
-            <input type="text" class="login-input">
-
-            <label class="login-label">Mot de passe :</label>
-            <input type="password" class="login-input">
-
-            <button type="submit" class="login-btn">Se connecter</button>
-
-        </form>
-
-    </div>
+        <p>&copy; 2025 Baskisanté. Tous droits réservés.</p>
+    </footer>
 
 </body>
 </html>
