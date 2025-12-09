@@ -8,57 +8,87 @@
     <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 768px)">
     <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 767px)">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles/donnees.css">
 </head>
 
 <body>
 
-    <div class="logo">
-        <a href="index.html">
-            <img src="logoB.png" class="logo-img" alt="Logo">
-        </a>
-    </div>
-
-    <nav class="header-nav">
-        <div class="nav-links">
-            <a href="abonnements.html">Abonnements</a>
-            <a href="creer-compte.html">Créer un compte</a>
-            <a href="s-authentifier.html">S'authentifier</a>
-        </div>
-    </nav>
-
-    <div class="tabs-container">
-        <a class="tab active" href="enregistrer-donnees.html">Données</a>
-        <a class="tab" href="suivi-sante.html">Suivi de la santé</a>
-        <a class="tab" href="conseils.html">Conseils personnalisés</a>
-    </div>
-
-    <h1 class="title-center">Enregistrer ces données</h1>
-
-    <div class="enregistrer-wrapper">
-
-        <div class="left-buttons">
-            <button class="data-btn">Ajouter un exercice physique</button>
-            <button class="data-btn">Ajouter des données de sommeil</button>
-            <button class="data-btn">Questionnaire de santé mentale</button>
-            <button class="data-btn">Ajouter un rythme cardiaque moyen</button>
-            <button class="data-btn">Ajouter le nombre de calories consommées</button>
-            <button class="data-btn">Ajouter le nombre de calories brûlées</button>
-            <button class="data-btn">Ajouter le nombre de litres d'eau bus</button>
+    <header class="header-nav">
+        <div class="logo">
+            <a href="index.html">
+                <img src="logoB.png" class="logo-img" alt="Logo Baskisanté">
+            </a>
         </div>
 
-        <div class="right-buttons">
-            <button class="data-btn right">Ajouter des données via capteur</button>
-            <button class="data-btn right">Ajouter des données via une montre connectée</button>
+        <nav class="nav-links"></nav>
+
+        <div class="user-actions">
+            <a href="creer-compte.html" class="signup-btn">Créer un compte</a>
+            <a href="s-authentifier.html">Se connecter</a>
+            <a href="abo.html">Abonnement</a>
         </div>
+    </header>
 
-    </div>
+    <main class="main-content-centered">
 
-    <footer class="footer-links">
-        <a href="qui-sommes-nous.html">Qui sommes-nous</a>
-        <a href="faq.html">FAQ</a>
-        <a href="mentions-legales.html">Mentions légales</a>
+        <section class="card" style="max-width: 900px;">
+
+            <h2>Enregistrer ces données</h2>
+
+            <div class="action-grid">
+
+                <div class="action-card">
+                    <h3>Activité physique</h3>
+                    <a href="#">Ajouter un exercice</a>
+                </div>
+
+                <div class="action-card">
+                    <h3>Sommeil</h3>
+                    <a href="#">Ajouter des données</a>
+                </div>
+
+                <div class="action-card">
+                    <h3>Santé mentale</h3>
+                    <a href="#">Questionnaire</a>
+                </div>
+
+                <div class="action-card">
+                    <h3>Rythme cardiaque</h3>
+                    <a href="#">Ajouter une mesure</a>
+                </div>
+
+                <div class="action-card">
+                    <h3>Calories consommées</h3>
+                    <a href="#">Ajouter</a>
+                </div>
+
+                <div class="action-card">
+                    <h3>Calories brûlées</h3>
+                    <a href="#">Ajouter</a>
+                </div>
+
+                <div class="action-card">
+                    <h3>Hydratation</h3>
+                    <a href="#">Ajouter de l'eau</a>
+                </div>
+
+                <div class="action-card">
+                    <h3>Données connectées</h3>
+                    <a href="#">Via capteur / montre</a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="qui-sommes-nous.html">Qui sommes-nous</a>
+            <a href="faq.html">FAQ</a>
+            <a href="mentions-legales.html">Mentions légales</a>
+        </div>
+        <p>&copy; 2025 Baskisanté. Tous droits réservés.</p>
     </footer>
 
 </body>
