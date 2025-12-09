@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baskisanté - Se Connecter</title>
+    <title>Baskisanté - Connexion</title>
+
     <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 768px)">
     <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 767px)">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <!-- HEADER : Structure identique à la page d'accueil -->
     <header class="header-nav">
         <div class="logo">
             <a href="index.html">
@@ -19,10 +20,9 @@
         </div>
 
         <nav class="nav-links">
-            <!-- Laisser vide -->
+
         </nav>
 
-        <!-- Actions Utilisateur en haut à droite (Créer un compte, Se connecter, Abonnement) -->
         <div class="user-actions">
             <a href="creer-compte.html" class="signup-btn">Créer un compte</a>
             <a href="s-authentifier.html">Se connecter</a>
@@ -30,37 +30,35 @@
         </div>
     </header>
 
-    <!-- CONTENU PRINCIPAL : Formulaire de Connexion centré -->
-    <div class="main-content-centered">
-        
-        <div class="card">
-            <h2>Connectez-vous à votre compte Baskisanté</h2>
-            
+    <main class="main-content-centered">
+
+        <section class="card">
+            <h2>Connexion</h2>
+
             <form action="/login" method="POST">
-                
+
                 <div class="form-group">
-                    <label for="email">Adresse Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="login">Mail ou nom d'utilisateur</label>
+                    <input type="text" id="login" name="login" required>
                 </div>
-                
+
                 <div class="form-group">
                     <label for="password">Mot de passe</label>
                     <input type="password" id="password" name="password" required>
                 </div>
-                
-                <button type="submit" class="submit-btn">Se Connecter</button>
-                
+
+                <button type="submit" class="submit-btn">Se connecter</button>
+
             </form>
-            
+
             <p class="login-link">
-                <a href="creer-compte.html">Créer un compte</a> | 
+                <a href="creer-compte.html">Créer un compte</a> |
                 <a href="recuperation-mdp.html">Mot de passe oublié ?</a>
             </p>
-        </div>
+        </section>
 
-    </div>
+    </main>
 
-    <!-- FOOTER : Structure identique à la page d'accueil (Mentions légales et FAQ) -->
     <footer class="site-footer">
         <div class="footer-links">
             <a href="mention.html">Mentions légales</a>
