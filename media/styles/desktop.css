@@ -306,3 +306,38 @@ select:focus {
 }        
 
 /* FIN css page abonnements */
+
+/* style page mention */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+p {
+    max-width: 800px;
+    margin: 0 auto 15px auto;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+/* FIN style page mention */
