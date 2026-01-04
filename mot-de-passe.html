@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baskisanté - Abonnements </title>
+    <title>Baskisanté - Mot de passe oublié</title>
     <link rel="stylesheet" href="media/styles/desktop.css" media="screen and (min-width: 768px)">
     <link rel="stylesheet" href="media/styles/mobile.css" media="screen and (max-width: 767px)">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body> 
-
- <header class="header-nav">
+<body>
+    
+    <header class="header-nav">
         <div class="logo">
             <a href="index.html">
                 <img src="media/pictures/logoB.png" class="logo-img" alt="Logo Baskisanté">
@@ -27,30 +27,21 @@
             <a href="s-authentifier.html">Se connecter</a>
             <a href="abo.html">Abonnement</a>
         </div>
- </header>
+    </header>
 
-<main class="main-content-centered" >
-    <div class="card">
-        <h2>Créer un Compte Baskisanté</h2>
-        <form action="#" method="post" class="signup-form">
-            <label for="username">Nom d'utilisateur</label>
-            <input type="text" id="username" name="username" required>
+    <main class="main-content-centered">
+        <div class="card">
+            <h2>Mot de passe oublié</h2>
+            <form action="#" method="post" class="password-reset-form">
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="email">Adresse e-mail</label>
-            <input type="email" id="email" name="email" required>
+                <button type="submit" class="submit-btn">Réinitialiser mon mot de passe</button>
+            </form>
+        </div>
+    </main>
 
-            <label for="password">Mot de passe</label>
-            <input type="password" id="password" name="password" required>
-
-            <label for="confirm-password">Confirmer le mot de passe</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
-
-            <button type="submit" class="submit-btn">Créer mon compte</button>
-        </form>
-    </div>
-
-</main>
-   <footer class="site-footer">
+    <footer class="site-footer">
         <div class="footer-links">
             <a href="mention.html">Mentions légales</a>
             <a href="faq.html">FAQ</a>
@@ -58,7 +49,5 @@
         <p>&copy; 2025 Baskisanté. Tous droits réservés.</p>
     </footer>
 
-    
-
-    </body>
+</body>
 </html>
