@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baskisanté - Mot de passe oublié</title>
+
     <link rel="stylesheet" href="media/styles/desktop.css" media="screen and (min-width: 768px)">
     <link rel="stylesheet" href="media/styles/mobile.css" media="screen and (max-width: 767px)">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    
+
     <header class="header-nav">
         <div class="logo">
             <a href="index.html">
@@ -19,7 +20,6 @@
         </div>
 
         <nav class="nav-links">
-            <!-- Laisser vide pour que les user-actions soient poussées à droite par flex-grow: 1 -->
         </nav>
 
         <div class="user-actions">
@@ -30,15 +30,28 @@
     </header>
 
     <main class="main-content-centered">
-        <div class="card">
-            <h2>Mot de passe oublié</h2>
-            <form action="#" method="post" class="password-reset-form">
-                <label for="email">Adresse e-mail</label>
-                <input type="email" id="email" name="email" required>
 
-                <button type="submit" class="submit-btn">Réinitialiser mon mot de passe</button>
+        <section class="card">
+            <h2>Mot de passe oublié</h2>
+
+            <form action="index.html" method="GET">
+
+                <div class="form-group">
+                    <label for="email">Adresse e-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Réinitialiser mon mot de passe
+                </button>
+
             </form>
-        </div>
+
+            <p class="login-link">
+                <a href="s-authentifier.html">Retour à la connexion</a>
+            </p>
+        </section>
+
     </main>
 
     <footer class="site-footer">
